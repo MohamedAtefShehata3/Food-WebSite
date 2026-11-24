@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven | Premium Fine Dining & Gastronomy</title>
+
+    <!-- === Meta Tag For SEO === -->
+    <meta name="description" content="Experience high-end culinary excellence at Gourmet Haven. Explore our luxury menu featuring artisanal wood-fired pizzas, Black Angus burgers, hand-crafted desserts, and signature drinks. Reserve a table today.">
+    <meta name="keywords" content="luxury dining, gourmet food, fine dining, restaurant, table booking, artisanal pizza, steakhouse, high-end desserts">
+    <meta name="author" content="Gourmet Haven">
+
+    <!-- === Open Graph Meta Tags === -->
+    <meta property="og:title" content="Gourmet Haven | Premium Fine Dining">
+    <meta property="og:description" content="Experience high-end culinary excellence. Reserve your table and explore our custom curated menu.">
+    <meta property="og:image" content="images/main_img.png">
+    <meta property="og:type" content="website">
+
+    <!-- === FontAwesome Icon CDN === -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- === Css Link === -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==== Backdrop Overlay for drawers/modals ==== -->
+    <div class="overlay" id="main-overlay"></div>
+
+    <!-- ==== Floating Back-to-top Button ==== -->
+    <button class="back-to-top" id="back-to-top-btn" aria-label="Back To Top">
+        <i class="ri-arrow-up-double-fill"></i>
+    </button>
+
+    <!-- ==== header ==== -->
+    <header class="header" id="Header">
+        <div class="container">
+        <!-- == Icon Brand == -->
+        <a href="#home" class="logo" id="header-logo">
+            <img src="images/logo.png" alt="Logo Image" class="logo-img">
+            <span class="logo-text">Gourmet Haven</span>
+        </a>
+
+        <!-- == Navigation Links == -->
+        <nav class="navbar" id="Navbar">
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#book" class="nav-link">Book Tables</a></li>
+            </ul>
+        </nav>
+
+        <!-- === Action Control === -->
+            <!-- === Cart Button === -->
+            <button class="cart" id="cart-btn">
+                <i class="ri-shopping-bag-3-line"></i>
+                <span class="cart-number" id="cart-count">0</span>
+            </button>
+
+            <!-- === Booking Table Button === -->
+            <a href="#book" class="cta-btn booking-btn" id="booking-btn">Book a Table</a>
+
+            <!-- === Mobile Menu === -->
+            <button class="menu-toggle-btn" id="Menu-btn" aria-label="Toggle Navigation Menu">
+                <i class="ri-menu-5-fill"></i>
+            </button>
+        </div>
+    </header>
+
+</body>
+</html>
