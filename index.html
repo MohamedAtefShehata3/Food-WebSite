@@ -23,51 +23,118 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ==== Backdrop Overlay for drawers/modals ==== -->
+    <!-- Backdrop Overlay for drawers/modals -->
     <div class="overlay" id="main-overlay"></div>
 
-    <!-- ==== Floating Back-to-top Button ==== -->
-    <button class="back-to-top" id="back-to-top-btn" aria-label="Back To Top">
-        <i class="ri-arrow-up-double-fill"></i>
+    <!-- Floating Back-to-Top Button -->
+    <button class="back-to-top" id="back-to-top-btn" aria-label="Back to Top">
+        <i class="fa-solid fa-chevron-up"></i>
     </button>
 
-    <!-- ==== header ==== -->
-    <header class="header" id="Header">
+    <!-- Header / Sticky Navbar -->
+    <header class="header" id="main-header">
         <div class="container">
-        <!-- == Icon Brand == -->
-        <a href="#home" class="logo" id="header-logo">
-            <img src="images/logo.png" alt="Logo Image" class="logo-img">
-            <span class="logo-text">Gourmet Haven</span>
-        </a>
+            <!-- Brand Logo -->
+            <a href="#home" class="logo" id="header-logo">
+                <img src="images/logo.png" alt="Gourmet Haven Logo" class="logo-img">
+                <span class="logo-text">Gourmet Haven</span>
+            </a>
 
-        <!-- == Navigation Links == -->
-        <nav class="navbar" id="Navbar">
-            <ul class="nav-list">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#menu" class="nav-link">Menu</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#reviews" class="nav-link">Reviews</a></li>
-                <li><a href="#book" class="nav-link">Book Tables</a></li>
-            </ul>
-        </nav>
+            <!-- Navigation Links -->
+            <nav class="navbar" id="main-navbar">
+                <ul class="navbar-list">
+                    <li><a href="#home" class="navbar-link active">Home</a></li>
+                    <li><a href="#about" class="navbar-link">About</a></li>
+                    <li><a href="#menu" class="navbar-link">Menu</a></li>
+                    <li><a href="#gallery" class="navbar-link">Gallery</a></li>
+                    <li><a href="#reviews" class="navbar-link">Reviews</a></li>
+                    <li><a href="#booking" class="navbar-link">Book Table</a></li>
+                </ul>
+            </nav>
 
-        <!-- === Action Control === -->
-            <!-- === Cart Button === -->
-            <button class="cart" id="cart-btn">
-                <i class="ri-shopping-bag-3-line"></i>
-                <span class="cart-number" id="cart-count">0</span>
-            </button>
+            <!-- Action Controls -->
+            <div class="header-actions">
+                <!-- Cart Trigger Button -->
+                <button class="cart-toggle-btn" id="cart-toggle-btn" aria-label="Open Shopping Cart">
+                    <i class="fa-solid fa-shopping-bag"></i>
+                    <span class="cart-badge" id="cart-badge-count">0</span>
+                </button>
 
-            <!-- === Booking Table Button === -->
-            <a href="#book" class="cta-btn booking-btn" id="booking-btn">Book a Table</a>
+                <!-- Book Table CTA Button -->
+                <a href="#booking" class="cta-btn header-booking" id="header-booking-cta">Book a Table</a>
 
-            <!-- === Mobile Menu === -->
-            <button class="menu-toggle-btn" id="Menu-btn" aria-label="Toggle Navigation Menu">
-                <i class="ri-menu-5-fill"></i>
-            </button>
+                <!-- Mobile Hamburger Menu Button -->
+                <button class="menu-toggle-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Text Content -->
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Michelin Star Gastronomy</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Where Culinary <br>
+                        <span class="gold-text">Artistry</span> Meets <br>
+                        Perfect Taste
+                    </h1>
+                    <p class="hero-description">
+                        Embark on a sensational gastronomic journey crafted by world-class chefs. We marry rare, organic ingredients with innovative techniques to serve timeless culinary masterpieces.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="cta-btn" style="text-decoration: none; display: inline-block; text-align: center;">Explore Menu</a>
+                        <a href="#booking" class="btn-secondary" style="text-decoration: none;">
+                            <span>Reserve Table</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Signature Dishes</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Master Chefs</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9</span>
+                            <span class="stat-label">Customer Rating</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Media Column -->
+                <div class="hero-image-container">
+                    <div class="hero-bg-glow"></div>
+                    <img src="images/Food-Plate.png" alt="Exquisite signature plate" class="hero-main-img" id="hero-plate-image">
+                    
+                    <!-- Floating Dynamic Reviews Card -->
+                    <div class="hero-floating-badge">
+                        <img src="images/review_1.png" alt="Happy guest profile">
+                        <div>
+                            <div class="hero-badge-title">"Absolutely Stunning!"</div>
+                            <div class="hero-badge-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
